@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Online page</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>	
+		<center><h1>Добро пожаловать в Dental Esthetics!</h1></center>
+		<p></p>
+		<ul id="menu">
+			<li><a href="main page.html">О нас</a></li>
+			<li><a href="service page.html">Наши услуги</a>
+					<ul>
+							<li><a href="service page.html#services">Процедуры</a></li>
+							<li><a href="service page.html#tools">Оборудование</a></li>
+							<li><a href="service page.html#workers">Специалисты</a></li>
+					</ul>
+				</li>
+				<li><a href="prices page.html">Прайс-лист</a></li>
+				<li><a href="online page.html">Онлайн-заявка</a></li>
+				<li><a href="photo page.html">Фотогалерея</a></li>
+		</ul>
+		<div class="frame">
+			<center><h2><b>Онлайн-заявка на прием</b></h2></center>
+			<form method="post" action="insert.php">
+				<div id="high">
+					<b>ФИО*:</b>
+					<input id="name" name="name" type="text" size="40" required placeholder="ФИО">
+				</div>
+				<div id="high">
+					<b>Email:</b>
+					<input id="email"  name="email" type="text" size="40" placeholder="Email">
+				</div>
+				<div id="high">
+					<b>Номер телефона*:</b> 	
+					<input  id="phone"  name="phone" type="text" size="20" required placeholder="Номер телефона">
+				</div>
+				<div id="high">
+					<b>Вид услуги:</b>
+					<select>
+						<option value="0" name="service" type="text" size="4">Диагностика</option> 
+						<option value="1" name="service" type="text" size="4">Пломбирование при лечении поверхностного и среднего кариеса</option>
+						<option value="2" name="service" type="text" size="4">Пломбирование при лечении глубокого кариеса</option>
+						<option value="3" name="service" type="text" size="4">Пломбирование зубас пломбированием канала</option>
+						<option value="4" name="service" type="text" size="4">Пломбирование молочного зуба - простое</option>
+						<option value="5" name="service" type="text" size="4">Пломбирование молочного зуба светокомпозитом</option>
+						<option value="6" name="service" type="text" size="4">Снятие зубных отложений ультразвуком</option>
+						<option value="7" name="service" type="text" size="4">Фотоотбеливание</option>
+						<option value="8" name="service" type="text" size="4">Удаление молочного зуба</option>
+						<option value="9" name="service" type="text" size="4">Простое удаление зуба</option>
+						<option value="10" name="service" type="text" size="4">Сложное Удаление зуба</option>
+						<option value="11" name="service" type="text" size="4">Установка брекет-системы, металлической</option>
+						<option value="12" name="service" type="text" size="4">Установка брекет-системы эстетической лигатурной</option>
+					</select>
+				</div>
+				<div id="high">
+					<b>Дата и время приема:</b>
+					<input id="datetime" name="datetime" type="datetime-local">
+				</div>  
+				<center>
+					<button type="Submit" value="Submit">Отправить</button>
+					<button type="reset" value="Reset">Очистить</button>
+				</center>
+				<p></p>
+			</form>
+		</div>
+		<p></p>
+		<div class="framedown"> 
+			<center><div id="down"> Dental Esthetics</div></center>
+			<table class="table1">
+				<tr>
+					<td><b>Адрес:</b> ул. Абая, 36, мкр. Наурызбай</td>
+					<td class="rightcol"><a href="service page.html#services">Описание услуг</a></td>
+				</tr>
+				<tr>
+					<td><b>Телефон:</b> +7(707)-38-96-05</td>
+					<td class="rightcol"><a href="service page.html#tools">Наше оборудование</td>
+				</tr>
+				<tr>
+					<td><b>Почта:</b> DentalEsthetics@.kz</td>
+					<td class="rightcol"><a href="service page.html#workers">Наши специалисты</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="rightcol"><a href="prices page.html">Цены на услуги</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
